@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+body
+{
+	background-color:#F7F5D2;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: #074BCD;
+	font-size: 16px;
+}
+h1
+{
+	font-size: 35px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color:#E82F2F
+}
+h2{ font-size: 35px;
+	color: #000000}
+h3{ font-size: 20px;
+	color: #FF0004}
+.font-script
+{
+	font-family: "Ballet", cursive;
+	
+}
+h4{ font-size: 25px;
+	color: #FF0105}
+	.container
+{
+	width: 80%;
+	margin: auto;
+}
+*{ box-sizing: border-box} /* yêu cầu tất cả các box có viền hoặc padding đều inside */
+.col-1{ width: 8.33%} /* 100%/12 phần = 8.33 */
+.col-2{ width: 16.66%}
+.col-3{ width: 25%}
+.col-4{ width: 33.33%}
+.col-5{ width: 41.66%}
+.col-6{ width: 50%}
+.col-7{ width: 58.33%}
+.col-8{ width: 66.66%}
+.col-9{ width: 75%}
+.col-10{ width: 83.33%}
+.col-11{ width: 91.66%}
+.col-12{ width: 100%}
+[class*="col-"]
+{
+	border: 1px solid #12FF27;
+	padding: 16px
+}
+.row
+{
+	display: flex;
+	flex-wrap: wrap
+}
+.img-100{width: 100%; height: 100%}
+.img-50{ width: 100%; height: auto}
+.text-center{ text-align: center}
+.bg-center
+{
+	background-color: #9A9A9A;
+	padding-top: 50px;
+	padding-bottom: 50px
+}/*tạo hệ thống màu ( Chính primary / phụ: secondary / bady-text sáng : light/tối ; dark/ báo thành công: succes/báo lỗi; danger) */
+.text-primary{color:#FE0004}
+.text-secondary{color:#3077FF}
+.text-dark{color: #454242}
+.text-light{color:#DDDDDD}
+.text-body{color: #C1AFAF}
+.text-success{color: greenyellow}
+.text-danger{color: red}
+.text-gradient {
+	background-image: linear-gradient(45deg,red,green, pink, blue);
+	 -webkit-text-fill-color: transparent;
+	 -webkit-background-clip: text;
+}
+/*style hệ thống màu nền */
+a{
+	color:red;
+	text-decorration:none;
+	font-weight: bold
+}
+a:hover{
+	color:#FF0004;
+}
+.bg-primary{color:#FF0004}
+.bg-dark{background-color:#000000}
+.bg-light{background-color:#EEEEEE}
+.bg-white{background-color:#FFFFFF}
+.bg-success{background-color: greenyellow}
+.bg-danger{background-color: red}
+.bg-gradient { background-image: linear-gradient(red,green)}
+.box-shadow-1{ box-shadow:5px 4px 5px rgba(0,0,0,0.4)}
+.text-shadow{text-shadow: 4px 4px 10px rgba(0,0,0,0.2)}
+/* style hệ thống màu cho nút*/
+.bnt-primary{
+	background-color:#EB0E13;
+	color:#EEEEEE;
+	border-radius: 40px; /*bo góc 4 chiều*/
+		padding: 8px 16px;
+		font-weight: 600;
+		transition: 3s;
+		bolder: none
+}
+.btn-primary:hover
+{
+	background-color: red;
+	color:#fff
+}
+.btn-outline-primary {
+	border: 1px solid #EB0E13;
+	color: #EB0E13;
+	border-radius: 30px; /*bo góc 4 chiều*/
+	padding: 9px 18px;
+	font-weight: 600;
+	background: transparent;
+	transition: all 1s;
+	
+}
+.btn-outline-primary:hover
+{
+	background-color:#EB0E13;
+	color: #fff
+}
+/*navbar style*/
+.navbar{border-bottom: solid 2px green} 
+.navbar ul
+{
+	margin: 0; /* bỏ khoảng cách từ biên ngoài của box ul */
+	padding: 0;/* bỏ khoảng cách từ biên trong của box ul */
+	list-style: none;
+	display: flex;
+}
+.navbar ul li a
+{
+	padding: 20px;
+	background-color:#62c257;
+background: radial-gradient(circle, rgba(98, 194, 87, 1) 0%, rgba(148, 187, 233, 1) 100%);
+	color:#EEEEEE;
+	margin-right: 5px;
+	display: block;
+	text-decoration: none
+}
+.navbar ul li a:hover
+{
+background: #3F5EFB;
+background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+.form-control
+{
+	width:100%;border: #ddd solid 1px;padding: 8px;border-radius: 40px;margin-top: 8px	
+}
+label{margin-left: 4px; font-weight: 500; margin-top: 16px}
+.box-center {
+  margin: 0 auto;      /* Căn giữa ngang */
+  float: none;         /* Bỏ float nếu có */
+}
